@@ -26,7 +26,10 @@ To build the project, run:
 mvn clean install
 ```
 
-To see a dependency graph of the project, run:
+To see a dependency graph of the project 
+(from: https://github.com/ferstl/depgraph-maven-plugin)
+
+run:
 
 ```sh
 mvn com.github.ferstl:depgraph-maven-plugin:aggregate -DcreateImage=true -DreduceEdges=false -DclasspathScope=compile "-Dincludes=com.food.ordering.system*:*"
