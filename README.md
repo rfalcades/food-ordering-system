@@ -12,6 +12,7 @@ Based on udemy course
 
 ## Getting Started
 
+
 ### Prerequisites
 
 - Java 25+
@@ -23,3 +24,10 @@ To build the project, run:
 
 ```sh
 mvn clean install
+```
+
+To see a dependency graph of the project, run:
+
+```sh
+mvn com.github.ferstl:depgraph-maven-plugin:aggregate -DcreateImage=true -DreduceEdges=false -DclasspathScope=compile "-Dincludes=com.food.ordering.system*:*"
+```
